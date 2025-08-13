@@ -47,19 +47,12 @@ export default function Home() {
               </div>
               <div className="bg-gray-100 rounded-xl p-6 flex items-center justify-center">
                 <div className="text-center">
-                  <div className="w-full h-48 bg-gray-200 rounded-lg overflow-hidden">
+                  <div className="w-full h-48 bg-gray-200 rounded-lg overflow-hidden flex items-center justify-center">
                     <img
                       src="/images/IMG_3180.jpeg"
                       alt="John Sami - Professional headshot"
                       className="w-full h-full object-cover"
-                      onError={(e) => {
-                        e.currentTarget.style.display = 'none';
-                        e.currentTarget.nextElementSibling.style.display = 'flex';
-                      }}
                     />
-                    <div className="w-full h-full bg-gray-200 rounded-lg flex items-center justify-center text-gray-500 text-sm" style={{display: 'none'}}>
-                      Upload IMG_3180.jpeg to /public/images/
-                    </div>
                   </div>
                 </div>
               </div>
