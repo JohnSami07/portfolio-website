@@ -20,6 +20,7 @@ export default function Home() {
               width={160}
               height={160}
               className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
+              style={{ transform: 'rotate(90deg)' }}
               priority
             />
           </div>
