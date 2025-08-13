@@ -193,19 +193,21 @@ function addParallaxEffect() {
 
 // Mouse trail effect
 function addMouseTrail() {
+  if (typeof window === 'undefined') return;
+
   const trail = [];
   const trailLength = 10;
-  
+
   document.addEventListener('mousemove', (e) => {
     trail.push({ x: e.clientX, y: e.clientY, age: 0 });
-    
+
     if (trail.length > trailLength) {
       trail.shift();
     }
-    
+
     trail.forEach((point, index) => {
       point.age++;
-      
+
       const div = document.createElement('div');
       div.style.position = 'fixed';
       div.style.left = point.x + 'px';
@@ -217,9 +219,9 @@ function addMouseTrail() {
       div.style.pointerEvents = 'none';
       div.style.zIndex = '9999';
       div.style.transform = `scale(${1 - point.age / trailLength})`;
-      
+
       document.body.appendChild(div);
-      
+
       setTimeout(() => {
         if (div.parentNode) {
           div.parentNode.removeChild(div);
@@ -228,6 +230,3 @@ function addMouseTrail() {
     });
   });
 }
-
-// Initialize mouse trail
-addMouseTrail();
