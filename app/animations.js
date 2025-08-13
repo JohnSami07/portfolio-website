@@ -38,6 +38,9 @@ export function initializeAnimations() {
 
   // Add parallax scrolling
   addParallaxEffect();
+
+  // Initialize mouse trail
+  addMouseTrail();
 }
 
 function createFloatingParticles() {
