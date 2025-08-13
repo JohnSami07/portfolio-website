@@ -220,7 +220,8 @@ function addMouseFollower() {
 function addTextRevealAnimation() {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
-      if (entry.isIntersecting) {
+      if (entry.isIntersecting && !entry.target.hasAttribute('data-text-revealed')) {
+        entry.target.setAttribute('data-text-revealed', 'true');
         const text = entry.target.textContent;
         const words = text.split(' ');
 
@@ -243,7 +244,10 @@ function addTextRevealAnimation() {
 
   setTimeout(() => {
     document.querySelectorAll('h2[class*="bg-gradient-to-r"]').forEach(heading => {
-      observer.observe(heading);
+      if (!heading.hasAttribute('data-text-observed')) {
+        heading.setAttribute('data-text-observed', 'true');
+        observer.observe(heading);
+      }
     });
   }, 500);
 }
