@@ -149,8 +149,12 @@ function addSkillProgressBars() {
         const skillCards = entry.target.querySelectorAll('[class*="bg-gradient-to-br"]:not([class*="hover:shadow-2xl"])');
 
         skillCards.forEach((card, index) => {
+          // Check if progress bar already exists
+          if (card.querySelector('.skill-progress-bar')) return;
+
           setTimeout(() => {
             const progressBar = document.createElement('div');
+            progressBar.className = 'skill-progress-bar';
             progressBar.style.cssText = `
               position: absolute;
               bottom: 0;
@@ -179,7 +183,8 @@ function addSkillProgressBars() {
 
   setTimeout(() => {
     const skillsSection = document.querySelector('h2[class*="from-gray-900 to-green-600"]')?.parentElement?.parentElement;
-    if (skillsSection) {
+    if (skillsSection && !skillsSection.hasAttribute('data-progress-observed')) {
+      skillsSection.setAttribute('data-progress-observed', 'true');
       observer.observe(skillsSection);
     }
   }, 1000);
