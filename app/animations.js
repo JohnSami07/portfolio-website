@@ -3,10 +3,19 @@
 export function initializeAnimations() {
   if (typeof window === 'undefined') return;
 
+  // Prevent multiple initializations
+  if (window.animationsInitialized) return;
+  window.animationsInitialized = true;
+
   // Clean up any existing elements to prevent duplicates
   const existingCanvas = document.getElementById('particles-canvas');
   if (existingCanvas) {
     existingCanvas.remove();
+  }
+
+  const existingFollower = document.querySelector('[data-mouse-follower]');
+  if (existingFollower) {
+    existingFollower.remove();
   }
 
   // Initialize all animations
