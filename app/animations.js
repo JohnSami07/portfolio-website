@@ -261,18 +261,6 @@ function addTextRevealAnimation() {
   }, 500);
 }
 
-function addParallaxScrolling() {
-  window.addEventListener('scroll', () => {
-    const scrolled = window.pageYOffset;
-    const parallaxElements = document.querySelectorAll('[class*="bg-gradient-to-br"]:not(main)');
-
-    parallaxElements.forEach((element, index) => {
-      const speed = 0.5 + (index * 0.1);
-      const yPos = -(scrolled * speed);
-      element.style.transform = `translateY(${yPos}px)`;
-    });
-  });
-}
 
 function addCounterAnimations() {
   const observer = new IntersectionObserver((entries) => {
