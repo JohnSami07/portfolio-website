@@ -99,7 +99,7 @@ export default function Home() {
                     <span className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">
                       Honors Program
                     </span>
-                    <span className="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm font-medium">
+                    <span className="bg-orange-100 text-orange-800 px-4 py-2 rounded-full text-lg font-bold" style={{fontFamily: 'Georgia, serif'}}>
                       First-generation College Student
                     </span>
                   </div>
