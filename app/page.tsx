@@ -66,11 +66,12 @@ export default function Home() {
               </div>
               <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-xl p-6 flex items-center justify-center">
                 <div className="text-center">
-                  <div className="w-full h-64 bg-white rounded-lg overflow-hidden shadow-lg">
+                  <div className="w-full h-80 bg-white rounded-lg overflow-hidden shadow-lg">
                     <img
                       src="/images/IMG_7029.jpeg"
                       alt="John Sami - About me photo"
-                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                      className="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-300"
+                      style="object-position: center 30%"
                     />
                   </div>
                 </div>
