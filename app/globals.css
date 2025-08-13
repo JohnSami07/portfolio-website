@@ -112,11 +112,6 @@ h1, h2, h3, h4, h5, h6 {
   mix-blend-mode: screen;
 }
 
-/* Smooth transitions for parallax elements */
-.parallax {
-  will-change: transform;
-  transition: transform 0.1s ease-out;
-}
 
 /* Enhanced button interactions */
 button:active {
