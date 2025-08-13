@@ -1,18 +1,26 @@
+'use client';
+import { useEffect } from 'react';
+import { initializeAnimations } from './animations.js';
+
 export default function Home() {
+  useEffect(() => {
+    initializeAnimations();
+  }, []);
+
   return (
-    <main className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
+    <main className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 relative overflow-hidden">
       <div className="max-w-6xl mx-auto px-4 py-8">
         {/* Hero Section */}
-        <header className="text-center mb-16 bg-white rounded-2xl shadow-lg p-12">
-          <div className="w-32 h-32 rounded-full mx-auto mb-6 overflow-hidden">
+        <header className="text-center mb-16 bg-gradient-to-br from-white/95 to-blue-50/95 backdrop-blur-sm rounded-2xl shadow-2xl p-12 border border-white/20 relative z-10 hover:shadow-3xl transition-all duration-500">
+          <div className="w-32 h-32 rounded-full mx-auto mb-6 overflow-hidden ring-4 ring-blue-400/50 shadow-2xl hover:ring-purple-400/50 transition-all duration-300 hover:scale-110">
             <img
               src="/images/IMG_3180.jpeg"
               alt="John Sami - Profile Picture"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
             />
           </div>
-          <h1 className="text-5xl font-bold text-gray-900 mb-4">John Sami</h1>
-          <p className="text-2xl text-blue-600 font-medium mb-6">Computer Science Student</p>
+          <h1 className="text-5xl font-bold bg-gradient-to-r from-gray-900 via-blue-600 to-purple-600 bg-clip-text text-transparent mb-4 hover:scale-105 transition-transform duration-300">John Sami</h1>
+          <p className="text-2xl bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent font-medium mb-6 animate-pulse">Computer Science Student</p>
           <div className="flex flex-wrap justify-center gap-6 text-gray-600">
             <div className="flex items-center gap-2">
               <a href="mailto:samijohn207@gmail.com" className="hover:text-blue-600 transition-colors">
@@ -44,8 +52,8 @@ export default function Home() {
 
         {/* About Section */}
         <section className="mb-16">
-          <div className="bg-white rounded-2xl shadow-lg p-8">
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">
+          <div className="bg-gradient-to-br from-white/95 to-gray-50/95 backdrop-blur-sm rounded-2xl shadow-2xl p-8 border border-white/20 hover:shadow-3xl transition-all duration-500">
+            <h2 className="text-3xl font-bold bg-gradient-to-r from-gray-900 to-blue-600 bg-clip-text text-transparent mb-6 hover:scale-105 transition-transform duration-300">
               About Me
             </h2>
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -73,8 +81,8 @@ export default function Home() {
 
         {/* Education Section */}
         <section className="mb-16">
-          <div className="bg-white rounded-2xl shadow-lg p-8">
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">
+          <div className="bg-gradient-to-br from-white/95 to-purple-50/95 backdrop-blur-sm rounded-2xl shadow-2xl p-8 border border-white/20 hover:shadow-3xl transition-all duration-500">
+            <h2 className="text-3xl font-bold bg-gradient-to-r from-gray-900 to-purple-600 bg-clip-text text-transparent mb-6 hover:scale-105 transition-transform duration-300">
               Education
             </h2>
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -128,33 +136,33 @@ export default function Home() {
 
         {/* Skills Section */}
         <section className="mb-16">
-          <div className="bg-white rounded-2xl shadow-lg p-8">
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">
+          <div className="bg-gradient-to-br from-white/95 to-green-50/95 backdrop-blur-sm rounded-2xl shadow-2xl p-8 border border-white/20 hover:shadow-3xl transition-all duration-500">
+            <h2 className="text-3xl font-bold bg-gradient-to-r from-gray-900 to-green-600 bg-clip-text text-transparent mb-6 hover:scale-105 transition-transform duration-300">
               Technical Skills
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              <div className="bg-blue-50 rounded-xl p-6 text-center">
+              <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-6 text-center hover:shadow-xl transition-all duration-300 cursor-pointer transform hover:-translate-y-2">
                 <div className="w-16 h-16 bg-blue-100 rounded-full mx-auto mb-4 flex items-center justify-center">
                   <span className="text-2xl font-bold text-blue-600">J</span>
                 </div>
                 <h3 className="font-bold text-blue-900 mb-2">Java</h3>
                 <p className="text-blue-700 text-sm">Object-oriented programming</p>
               </div>
-              <div className="bg-green-50 rounded-xl p-6 text-center">
+              <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-6 text-center hover:shadow-xl transition-all duration-300 cursor-pointer transform hover:-translate-y-2">
                 <div className="w-16 h-16 bg-green-100 rounded-full mx-auto mb-4 flex items-center justify-center">
                   <span className="text-2xl font-bold text-green-600">C++</span>
                 </div>
                 <h3 className="font-bold text-green-900 mb-2">C++</h3>
                 <p className="text-green-700 text-sm">Systems programming</p>
               </div>
-              <div className="bg-purple-50 rounded-xl p-6 text-center">
+              <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl p-6 text-center hover:shadow-xl transition-all duration-300 cursor-pointer transform hover:-translate-y-2">
                 <div className="w-16 h-16 bg-purple-100 rounded-full mx-auto mb-4 flex items-center justify-center">
                   <span className="text-2xl font-bold text-purple-600">SQL</span>
                 </div>
                 <h3 className="font-bold text-purple-900 mb-2">SQL</h3>
                 <p className="text-purple-700 text-sm">Database management</p>
               </div>
-              <div className="bg-orange-50 rounded-xl p-6 text-center">
+              <div className="bg-gradient-to-br from-orange-50 to-orange-100 rounded-xl p-6 text-center hover:shadow-xl transition-all duration-300 cursor-pointer transform hover:-translate-y-2">
                 <div className="w-16 h-16 bg-orange-100 rounded-full mx-auto mb-4 flex items-center justify-center">
                   <span className="text-2xl font-bold text-orange-600">&lt;/&gt;</span>
                 </div>
