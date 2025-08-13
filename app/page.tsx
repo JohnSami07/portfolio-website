@@ -71,7 +71,7 @@ export default function Home() {
                       src="/images/IMG_7029.jpeg"
                       alt="John Sami - About me photo"
                       className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                      style={{objectPosition: 'center 30%'}}
+                      style={{objectPosition: 'center 70%'}}
                     />
                   </div>
                 </div>
