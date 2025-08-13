@@ -12,7 +12,7 @@ export default function Home() {
       <div className="max-w-6xl mx-auto px-4 py-8">
         {/* Hero Section */}
         <header className="text-center mb-16 bg-gradient-to-br from-white/95 to-blue-50/95 backdrop-blur-sm rounded-2xl shadow-2xl p-12 border border-white/20 relative z-10 hover:shadow-3xl transition-all duration-500">
-          <div className="w-32 h-32 rounded-full mx-auto mb-6 overflow-hidden ring-4 ring-blue-400/50 shadow-2xl hover:ring-purple-400/50 transition-all duration-300 hover:scale-110">
+          <div className="w-40 h-40 rounded-full mx-auto mb-6 overflow-hidden ring-4 ring-blue-400/50 shadow-2xl hover:ring-purple-400/50 transition-all duration-300 hover:scale-110">
             <img
               src="/images/IMG_3180.jpeg"
               alt="John Sami - Profile Picture"
@@ -33,7 +33,7 @@ export default function Home() {
               </a>
             </div>
             <div className="flex items-center gap-3">
-              <div className="w-8 h-8 rounded-full overflow-hidden">
+              <div className="w-12 h-12 rounded-full overflow-hidden">
                 <img
                   src="/images/image.jpeg"
                   alt="Nashville, TN"
@@ -66,7 +66,7 @@ export default function Home() {
               </div>
               <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-xl p-6 flex items-center justify-center">
                 <div className="text-center">
-                  <div className="w-full h-48 bg-white rounded-lg overflow-hidden shadow-lg">
+                  <div className="w-full h-64 bg-white rounded-lg overflow-hidden shadow-lg">
                     <img
                       src="/images/IMG_7029.jpeg"
                       alt="John Sami - About me photo"
@@ -120,7 +120,7 @@ export default function Home() {
               </div>
               <div className="bg-gradient-to-br from-purple-50 to-blue-50 rounded-xl p-6 flex items-center justify-center">
                 <div className="text-center">
-                  <div className="w-full h-32 bg-white rounded-lg mb-4 overflow-hidden shadow-lg">
+                  <div className="w-full h-48 bg-white rounded-lg mb-4 overflow-hidden shadow-lg">
                     <img
                       src="/images/image-full.jpg"
                       alt="Belmont University Campus"
