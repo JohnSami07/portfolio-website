@@ -25,7 +25,6 @@ export function initializeAnimations() {
   addSkillProgressBars();
   addMouseFollower();
   addTextRevealAnimation();
-  addParallaxScrolling();
   addCounterAnimations();
   addSimpleHoverEffects();
 }
