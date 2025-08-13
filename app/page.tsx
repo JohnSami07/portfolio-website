@@ -10,15 +10,6 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 relative overflow-hidden">
-      {/* Image Test Component - Remove this after testing */}
-      <div className="fixed top-4 right-4 z-50">
-        <details className="bg-white rounded-lg shadow-lg">
-          <summary className="p-2 cursor-pointer text-sm font-semibold">Test Images</summary>
-          <div className="w-96 max-h-96 overflow-auto">
-            <TestImages />
-          </div>
-        </details>
-      </div>
       <div className="max-w-6xl mx-auto px-4 py-8">
         {/* Hero Section */}
         <header className="text-center mb-16 bg-gradient-to-br from-white/95 to-blue-50/95 backdrop-blur-sm rounded-2xl shadow-2xl p-12 border border-white/20 relative z-10 hover:shadow-3xl transition-all duration-500">
