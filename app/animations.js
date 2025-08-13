@@ -116,6 +116,8 @@ function createFloatingParticles() {
 }
 
 function addSkillCardEffects() {
+  if (typeof window === 'undefined') return;
+
   const skillCards = document.querySelectorAll('[class*="bg-blue-50"], [class*="bg-green-50"], [class*="bg-purple-50"], [class*="bg-orange-50"]');
   
   skillCards.forEach(card => {
@@ -133,6 +135,8 @@ function addSkillCardEffects() {
 }
 
 function addProjectCard3DEffects() {
+  if (typeof window === 'undefined') return;
+
   const projectCards = document.querySelectorAll('[class*="bg-gradient-to-br"]');
   
   projectCards.forEach(card => {
@@ -159,6 +163,8 @@ function addProjectCard3DEffects() {
 }
 
 function addTypingAnimation() {
+  if (typeof window === 'undefined') return;
+
   const title = document.querySelector('h1');
   if (!title) return;
   
@@ -183,6 +189,8 @@ function addTypingAnimation() {
 }
 
 function addParallaxEffect() {
+  if (typeof window === 'undefined') return;
+
   window.addEventListener('scroll', () => {
     const scrolled = window.pageYOffset;
     const rate = scrolled * -0.5;
