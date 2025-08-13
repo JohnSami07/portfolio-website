@@ -175,12 +175,12 @@ export default function Home() {
 
         {/* Projects Section */}
         <section className="mb-16">
-          <div className="bg-white rounded-2xl shadow-lg p-8">
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">
+          <div className="bg-gradient-to-br from-white/95 to-indigo-50/95 backdrop-blur-sm rounded-2xl shadow-2xl p-8 border border-white/20 hover:shadow-3xl transition-all duration-500">
+            <h2 className="text-3xl font-bold bg-gradient-to-r from-gray-900 to-indigo-600 bg-clip-text text-transparent mb-6 hover:scale-105 transition-transform duration-300">
               Featured Projects
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="bg-gradient-to-br from-blue-50 to-indigo-100 rounded-xl p-6 hover:shadow-md transition-shadow">
+              <div className="bg-gradient-to-br from-blue-50 to-indigo-100 rounded-xl p-6 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 hover:scale-105 cursor-pointer border border-blue-200/50">
                 <div className="flex items-center justify-between mb-4">
                   <h3 className="text-xl font-bold text-gray-900">Personal Budget Tracker</h3>
                   <div className="w-12 h-12 bg-gray-200 rounded-lg flex items-center justify-center text-gray-500 text-xs">
@@ -197,16 +197,16 @@ export default function Home() {
                   <span className="bg-blue-200 text-blue-800 px-2 py-1 rounded text-xs">Chart.js</span>
                 </div>
                 <div className="flex gap-3">
-                  <button className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors text-sm">
+                  <button className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-4 py-2 rounded-lg hover:from-blue-700 hover:to-blue-800 transition-all duration-300 text-sm shadow-lg hover:shadow-xl transform hover:scale-105">
                     View Demo
                   </button>
-                  <button className="border border-blue-600 text-blue-600 px-4 py-2 rounded-lg hover:bg-blue-50 transition-colors text-sm">
+                  <button className="border border-blue-600 text-blue-600 px-4 py-2 rounded-lg hover:bg-gradient-to-r hover:from-blue-50 hover:to-blue-100 transition-all duration-300 text-sm hover:scale-105">
                     View Code
                   </button>
                 </div>
               </div>
 
-              <div className="bg-gradient-to-br from-green-50 to-emerald-100 rounded-xl p-6 hover:shadow-md transition-shadow">
+              <div className="bg-gradient-to-br from-green-50 to-emerald-100 rounded-xl p-6 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 hover:scale-105 cursor-pointer border border-green-200/50">
                 <div className="flex items-center justify-between mb-4">
                   <h3 className="text-xl font-bold text-gray-900">Study Planner App</h3>
                   <div className="w-12 h-12 bg-gray-200 rounded-lg flex items-center justify-center text-gray-500 text-xs">
@@ -223,16 +223,16 @@ export default function Home() {
                   <span className="bg-green-200 text-green-800 px-2 py-1 rounded text-xs">SQLite</span>
                 </div>
                 <div className="flex gap-3">
-                  <button className="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition-colors text-sm">
+                  <button className="bg-gradient-to-r from-green-600 to-green-700 text-white px-4 py-2 rounded-lg hover:from-green-700 hover:to-green-800 transition-all duration-300 text-sm shadow-lg hover:shadow-xl transform hover:scale-105">
                     View Demo
                   </button>
-                  <button className="border border-green-600 text-green-600 px-4 py-2 rounded-lg hover:bg-green-50 transition-colors text-sm">
+                  <button className="border border-green-600 text-green-600 px-4 py-2 rounded-lg hover:bg-gradient-to-r hover:from-green-50 hover:to-green-100 transition-all duration-300 text-sm hover:scale-105">
                     View Code
                   </button>
                 </div>
               </div>
 
-              <div className="bg-gradient-to-br from-purple-50 to-violet-100 rounded-xl p-6 hover:shadow-md transition-shadow">
+              <div className="bg-gradient-to-br from-purple-50 to-violet-100 rounded-xl p-6 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 hover:scale-105 cursor-pointer border border-purple-200/50">
                 <div className="flex items-center justify-between mb-4">
                   <h3 className="text-xl font-bold text-gray-900">Portfolio Website</h3>
                   <div className="w-12 h-12 bg-gray-200 rounded-lg flex items-center justify-center text-gray-500 text-xs">
@@ -249,10 +249,10 @@ export default function Home() {
                   <span className="bg-purple-200 text-purple-800 px-2 py-1 rounded text-xs">TypeScript</span>
                 </div>
                 <div className="flex gap-3">
-                  <button className="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition-colors text-sm">
+                  <button className="bg-gradient-to-r from-purple-600 to-purple-700 text-white px-4 py-2 rounded-lg hover:from-purple-700 hover:to-purple-800 transition-all duration-300 text-sm shadow-lg hover:shadow-xl transform hover:scale-105">
                     View Live
                   </button>
-                  <button className="border border-purple-600 text-purple-600 px-4 py-2 rounded-lg hover:bg-purple-50 transition-colors text-sm">
+                  <button className="border border-purple-600 text-purple-600 px-4 py-2 rounded-lg hover:bg-gradient-to-r hover:from-purple-50 hover:to-purple-100 transition-all duration-300 text-sm hover:scale-105">
                     View Code
                   </button>
                 </div>
@@ -273,8 +273,8 @@ export default function Home() {
 
         {/* Contact Section */}
         <section className="mb-8">
-          <div className="bg-white rounded-2xl shadow-lg p-8">
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">
+          <div className="bg-gradient-to-br from-white/95 to-pink-50/95 backdrop-blur-sm rounded-2xl shadow-2xl p-8 border border-white/20 hover:shadow-3xl transition-all duration-500">
+            <h2 className="text-3xl font-bold bg-gradient-to-r from-gray-900 to-pink-600 bg-clip-text text-transparent mb-6 hover:scale-105 transition-transform duration-300">
               Get In Touch
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -285,7 +285,7 @@ export default function Home() {
                 </p>
                 <div className="space-y-4">
                   <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                    <div className="w-12 h-12 bg-gradient-to-br from-blue-100 to-blue-200 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110">
                       <span className="text-blue-600 font-semibold">@</span>
                     </div>
                     <div>
@@ -296,7 +296,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
+                    <div className="w-12 h-12 bg-gradient-to-br from-green-100 to-green-200 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110">
                       <span className="text-green-600 font-semibold">#</span>
                     </div>
                     <div>
@@ -307,7 +307,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center">
+                    <div className="w-12 h-12 bg-gradient-to-br from-purple-100 to-purple-200 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110">
                       <span className="text-purple-600 font-semibold">in</span>
                     </div>
                     <div>
