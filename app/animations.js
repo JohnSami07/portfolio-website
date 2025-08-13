@@ -201,6 +201,7 @@ function addSkillProgressBars() {
 
 function addMouseFollower() {
   const follower = document.createElement('div');
+  follower.setAttribute('data-mouse-follower', 'true');
   follower.style.cssText = `
     position: fixed;
     width: 20px;
