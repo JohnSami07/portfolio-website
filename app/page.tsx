@@ -197,10 +197,10 @@ export default function Home() {
                   <span className="bg-blue-200 text-blue-800 px-2 py-1 rounded text-xs">Chart.js</span>
                 </div>
                 <div className="flex gap-3">
-                  <button className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-4 py-2 rounded-lg hover:from-blue-700 hover:to-blue-800 transition-all duration-300 text-sm shadow-lg hover:shadow-xl transform hover:scale-105">
+                  <button className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-4 py-2 rounded-lg hover:from-blue-700 hover:to-blue-800 transition-all duration-300 text-sm shadow-lg hover:shadow-xl">
                     View Demo
                   </button>
-                  <button className="border border-blue-600 text-blue-600 px-4 py-2 rounded-lg hover:bg-gradient-to-r hover:from-blue-50 hover:to-blue-100 transition-all duration-300 text-sm hover:scale-105">
+                  <button className="border border-blue-600 text-blue-600 px-4 py-2 rounded-lg hover:bg-blue-50 transition-all duration-300 text-sm">
                     View Code
                   </button>
                 </div>
@@ -223,10 +223,10 @@ export default function Home() {
                   <span className="bg-green-200 text-green-800 px-2 py-1 rounded text-xs">SQLite</span>
                 </div>
                 <div className="flex gap-3">
-                  <button className="bg-gradient-to-r from-green-600 to-green-700 text-white px-4 py-2 rounded-lg hover:from-green-700 hover:to-green-800 transition-all duration-300 text-sm shadow-lg hover:shadow-xl transform hover:scale-105">
+                  <button className="bg-gradient-to-r from-green-600 to-green-700 text-white px-4 py-2 rounded-lg hover:from-green-700 hover:to-green-800 transition-all duration-300 text-sm shadow-lg hover:shadow-xl">
                     View Demo
                   </button>
-                  <button className="border border-green-600 text-green-600 px-4 py-2 rounded-lg hover:bg-gradient-to-r hover:from-green-50 hover:to-green-100 transition-all duration-300 text-sm hover:scale-105">
+                  <button className="border border-green-600 text-green-600 px-4 py-2 rounded-lg hover:bg-green-50 transition-all duration-300 text-sm">
                     View Code
                   </button>
                 </div>
@@ -249,10 +249,10 @@ export default function Home() {
                   <span className="bg-purple-200 text-purple-800 px-2 py-1 rounded text-xs">TypeScript</span>
                 </div>
                 <div className="flex gap-3">
-                  <button className="bg-gradient-to-r from-purple-600 to-purple-700 text-white px-4 py-2 rounded-lg hover:from-purple-700 hover:to-purple-800 transition-all duration-300 text-sm shadow-lg hover:shadow-xl transform hover:scale-105">
+                  <button className="bg-gradient-to-r from-purple-600 to-purple-700 text-white px-4 py-2 rounded-lg hover:from-purple-700 hover:to-purple-800 transition-all duration-300 text-sm shadow-lg hover:shadow-xl">
                     View Live
                   </button>
-                  <button className="border border-purple-600 text-purple-600 px-4 py-2 rounded-lg hover:bg-gradient-to-r hover:from-purple-50 hover:to-purple-100 transition-all duration-300 text-sm hover:scale-105">
+                  <button className="border border-purple-600 text-purple-600 px-4 py-2 rounded-lg hover:bg-purple-50 transition-all duration-300 text-sm">
                     View Code
                   </button>
                 </div>
