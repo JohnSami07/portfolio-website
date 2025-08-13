@@ -19,8 +19,8 @@ export default function Home() {
               className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
             />
           </div>
-          <h1 className="text-5xl font-bold bg-gradient-to-r from-gray-900 via-blue-600 to-purple-600 bg-clip-text text-transparent mb-4 hover:scale-105 transition-transform duration-300">John Sami</h1>
-          <p className="text-2xl bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent font-medium mb-6 animate-pulse">Computer Science Student</p>
+          <h1 className="text-5xl font-bold bg-gradient-to-r from-gray-900 via-blue-600 to-purple-600 bg-clip-text text-transparent mb-4 hover:scale-105 transition-transform duration-300" style={{fontFamily: 'Poppins, sans-serif'}}>John Sami</h1>
+          <p className="text-2xl bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent font-medium mb-6" style={{fontFamily: 'Poppins, sans-serif'}}>Computer Science Student</p>
           <div className="flex flex-wrap justify-center gap-6 text-gray-600">
             <div className="flex items-center gap-2">
               <a href="mailto:samijohn207@gmail.com" className="hover:text-blue-600 transition-colors">
