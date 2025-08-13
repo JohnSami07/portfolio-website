@@ -4,8 +4,12 @@ export default function Home() {
       <div className="max-w-6xl mx-auto px-4 py-8">
         {/* Hero Section */}
         <header className="text-center mb-16 bg-white rounded-2xl shadow-lg p-12">
-          <div className="w-32 h-32 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full mx-auto mb-6 flex items-center justify-center text-white text-4xl font-bold">
-            JS
+          <div className="w-32 h-32 rounded-full mx-auto mb-6 overflow-hidden">
+            <img
+              src="/images/IMG_3180.jpeg"
+              alt="John Sami - Profile Picture"
+              className="w-full h-full object-cover"
+            />
           </div>
           <h1 className="text-5xl font-bold text-gray-900 mb-4">John Sami</h1>
           <p className="text-2xl text-blue-600 font-medium mb-6">Computer Science Student</p>
