@@ -24,7 +24,14 @@ export default function Home() {
                 (615) 938-2671
               </a>
             </div>
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-3">
+              <div className="w-8 h-8 rounded-full overflow-hidden">
+                <img
+                  src="/images/image.jpeg"
+                  alt="Nashville, TN"
+                  className="w-full h-full object-cover"
+                />
+              </div>
               <span>Nashville, TN</span>
             </div>
             <div className="flex items-center gap-2">
@@ -49,13 +56,13 @@ export default function Home() {
                   perfect 4.0 GPA while participating in the Honors Program.
                 </p>
               </div>
-              <div className="bg-gray-100 rounded-xl p-6 flex items-center justify-center">
+              <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-xl p-6 flex items-center justify-center">
                 <div className="text-center">
-                  <div className="w-full h-48 bg-gray-200 rounded-lg overflow-hidden flex items-center justify-center">
+                  <div className="w-full h-48 bg-white rounded-lg overflow-hidden shadow-lg">
                     <img
-                      src="/images/IMG_3180.jpeg"
-                      alt="John Sami - Professional headshot"
-                      className="w-full h-full object-cover"
+                      src="/images/IMG_7029.jpeg"
+                      alt="John Sami - About me photo"
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                     />
                   </div>
                 </div>
@@ -103,12 +110,16 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="bg-gray-100 rounded-xl p-6 flex items-center justify-center">
-                <div className="text-center text-gray-500">
-                  <div className="w-full h-32 bg-gray-200 rounded-lg mb-4 flex items-center justify-center">
-                    University Image
+              <div className="bg-gradient-to-br from-purple-50 to-blue-50 rounded-xl p-6 flex items-center justify-center">
+                <div className="text-center">
+                  <div className="w-full h-32 bg-white rounded-lg mb-4 overflow-hidden shadow-lg">
+                    <img
+                      src="/images/image-full.jpg"
+                      alt="Belmont University Campus"
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    />
                   </div>
-                  <p className="text-sm">Belmont University campus or logo</p>
+                  <p className="text-sm text-gray-600 font-medium">Belmont University</p>
                 </div>
               </div>
             </div>
