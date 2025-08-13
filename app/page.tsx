@@ -1,6 +1,7 @@
 'use client';
 import { useEffect } from 'react';
 import { initializeAnimations } from './animations.js';
+import TestImages from './test-images';
 
 export default function Home() {
   useEffect(() => {
