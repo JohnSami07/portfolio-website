@@ -1,14 +1,17 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  images: {
-    domains: [],
-    formats: ['image/webp', 'image/avif'],
-    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
-    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
-  },
-  experimental: {
-    optimizePackageImports: ['react-icons'],
-  },
-}
+const isProd = process.env.NODE_ENV === 'production';
 
-module.exports = nextConfig
+module.exports = {
+  // GitHub Pages needs a fully static export
+  output: 'export',
+
+  // Your repo name (so assets resolve correctly on Pages)
+  basePath: isProd ? '/portfolio-website' : '',
+  assetPrefix: isProd ? '/portfolio-website/' : '',
+
+  // Disable Next image optimizer (not supported on static export)
+  images: { unoptimized: true },
+
+  // If you have dynamic routes, make sure they're pre-renderable
+  trailingSlash: true, // optional but helps with Pages routing
+};
