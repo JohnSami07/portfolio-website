@@ -65,7 +65,7 @@ export default function Home() {
             </h2>
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8">
               <div className="lg:col-span-2">
-                <p className="text-lg sm:text-xl text-gray-700 leading-relaxed">
+                <p className="text-2xl sm:text-3xl lg:text-4xl text-gray-700 leading-relaxed font-medium">
                   First-generation Egyptian college student pursuing a Bachelor of Science in Computer Science at Belmont University.
                   Passionate about software development, problem-solving, and creating innovative solutions. Currently maintaining a
                   perfect 4.0 GPA while participating in the Honors Program.
