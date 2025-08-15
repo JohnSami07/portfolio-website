@@ -28,8 +28,8 @@ export default function Home() {
           <p className="text-2xl bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent font-medium mb-6" style={{fontFamily: 'Poppins, sans-serif'}}>Computer Science Student</p>
           <div className="flex flex-wrap justify-center gap-6 text-gray-600">
             <div className="flex items-center gap-2">
-              <a href="mailto:samijohn207@gmail.com" className="hover:text-blue-600 transition-colors">
-                samijohn207@gmail.com
+              <a href="mailto:johnsami.315@gmail.com" className="hover:text-blue-600 transition-colors">
+                johnsami.315@gmail.com
               </a>
             </div>
             <div className="flex items-center gap-2">
@@ -303,8 +303,8 @@ export default function Home() {
                     </div>
                     <div>
                       <p className="font-medium text-gray-900">Email</p>
-                      <a href="mailto:samijohn207@gmail.com" className="text-blue-600 hover:underline">
-                        samijohn207@gmail.com
+                      <a href="mailto:johnsami.315@gmail.com" className="text-blue-600 hover:underline">
+                        johnsami.315@gmail.com
                       </a>
                     </div>
                   </div>
