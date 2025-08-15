@@ -163,8 +163,8 @@ export default function Home() {
                     <p className="text-blue-600 font-medium text-lg">Nashville, TN</p>
                     <p className="text-gray-600">Fall 2025</p>
                   </div>
-                  <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center">
-                    <span className="text-white font-bold text-2xl">💻</span>
+                  <div className="w-16 h-16 bg-blue-500 rounded-lg flex items-center justify-center">
+                    <span className="text-white font-bold text-xl">CODE</span>
                   </div>
                 </div>
                 <ul className="space-y-2 text-gray-700">
@@ -187,8 +187,8 @@ export default function Home() {
                     <p className="text-purple-600 font-medium text-lg">Belmont University - Nashville, TN</p>
                     <p className="text-gray-600">Current</p>
                   </div>
-                  <div className="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center">
-                    <span className="text-white font-bold text-2xl">📚</span>
+                  <div className="w-16 h-16 bg-purple-500 rounded-lg flex items-center justify-center">
+                    <span className="text-white font-bold text-xl">EDU</span>
                   </div>
                 </div>
                 <ul className="space-y-2 text-gray-700">
@@ -211,8 +211,8 @@ export default function Home() {
                     <p className="text-green-600 font-medium text-lg">Independent Project</p>
                     <p className="text-gray-600">2025</p>
                   </div>
-                  <div className="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center">
-                    <span className="text-white font-bold text-2xl">🐍</span>
+                  <div className="w-16 h-16 bg-green-500 rounded-lg flex items-center justify-center">
+                    <span className="text-white font-bold text-xl">PY</span>
                   </div>
                 </div>
                 <ul className="space-y-2 text-gray-700">
@@ -235,8 +235,8 @@ export default function Home() {
                     <p className="text-orange-600 font-medium text-lg">Nashville, TN</p>
                     <p className="text-gray-600">Current</p>
                   </div>
-                  <div className="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center">
-                    <span className="text-white font-bold text-2xl">🚗</span>
+                  <div className="w-16 h-16 bg-orange-500 rounded-lg flex items-center justify-center">
+                    <span className="text-white font-bold text-xl">AUTO</span>
                   </div>
                 </div>
                 <ul className="space-y-2 text-gray-700">
@@ -266,7 +266,7 @@ export default function Home() {
               <div className="bg-gradient-to-br from-blue-50/80 to-indigo-100/80 backdrop-blur-sm rounded-2xl p-6 border border-blue-200/50 hover:shadow-xl transition-all duration-500 hover:-translate-y-2">
                 <h3 className="text-xl font-bold text-blue-900 mb-4 flex items-center gap-3">
                   <div className="w-10 h-10 bg-blue-500 rounded-lg flex items-center justify-center">
-                    <span className="text-white font-bold">&lt;/&gt;</span>
+                    <span className="text-white font-bold text-sm">&lt;/&gt;</span>
                   </div>
                   Programming & Development
                 </h3>
@@ -283,7 +283,7 @@ export default function Home() {
               <div className="bg-gradient-to-br from-purple-50/80 to-violet-100/80 backdrop-blur-sm rounded-2xl p-6 border border-purple-200/50 hover:shadow-xl transition-all duration-500 hover:-translate-y-2">
                 <h3 className="text-xl font-bold text-purple-900 mb-4 flex items-center gap-3">
                   <div className="w-10 h-10 bg-purple-500 rounded-lg flex items-center justify-center">
-                    <span className="text-white font-bold">⚙️</span>
+                    <span className="text-white font-bold text-sm">⚙</span>
                   </div>
                   Tools & Technologies
                 </h3>
@@ -300,7 +300,7 @@ export default function Home() {
               <div className="bg-gradient-to-br from-green-50/80 to-emerald-100/80 backdrop-blur-sm rounded-2xl p-6 border border-green-200/50 hover:shadow-xl transition-all duration-500 hover:-translate-y-2">
                 <h3 className="text-xl font-bold text-green-900 mb-4 flex items-center gap-3">
                   <div className="w-10 h-10 bg-green-500 rounded-lg flex items-center justify-center">
-                    <span className="text-white font-bold">🧠</span>
+                    <span className="text-white font-bold text-sm">◆</span>
                   </div>
                   Problem Solving & Analysis
                 </h3>
@@ -317,7 +317,7 @@ export default function Home() {
               <div className="bg-gradient-to-br from-orange-50/80 to-amber-100/80 backdrop-blur-sm rounded-2xl p-6 border border-orange-200/50 hover:shadow-xl transition-all duration-500 hover:-translate-y-2">
                 <h3 className="text-xl font-bold text-orange-900 mb-4 flex items-center gap-3">
                   <div className="w-10 h-10 bg-orange-500 rounded-lg flex items-center justify-center">
-                    <span className="text-white font-bold">🎯</span>
+                    <span className="text-white font-bold text-sm">◇</span>
                   </div>
                   Communication & Leadership
                 </h3>
@@ -346,7 +346,7 @@ export default function Home() {
                 <div className="flex items-center justify-between mb-4">
                   <h3 className="text-xl font-bold text-gray-900">Portfolio Website</h3>
                   <div className="w-12 h-12 bg-purple-500 rounded-lg flex items-center justify-center">
-                    <span className="text-white font-bold">🌐</span>
+                    <span className="text-white font-bold text-sm">WEB</span>
                   </div>
                 </div>
                 <p className="text-gray-700 mb-4">
@@ -374,7 +374,7 @@ export default function Home() {
                 <div className="flex items-center justify-between mb-4">
                   <h3 className="text-xl font-bold text-gray-900">Crypto Watch CLI</h3>
                   <div className="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center">
-                    <span className="text-white font-bold">₿</span>
+                    <span className="text-white font-bold text-sm">CLI</span>
                   </div>
                 </div>
                 <p className="text-gray-700 mb-4">
@@ -402,7 +402,7 @@ export default function Home() {
                 <div className="flex items-center justify-between mb-4">
                   <h3 className="text-xl font-bold text-gray-900">Carflip Hub</h3>
                   <div className="w-12 h-12 bg-green-500 rounded-lg flex items-center justify-center">
-                    <span className="text-white font-bold">🚗</span>
+                    <span className="text-white font-bold text-sm">DATA</span>
                   </div>
                 </div>
                 <div className="mb-2">
@@ -501,7 +501,7 @@ export default function Home() {
                     type="submit"
                     className="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white py-3 rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-xl font-medium"
                   >
-                    Send Message ✨
+                    Send Message
                   </button>
                 </form>
               </div>
