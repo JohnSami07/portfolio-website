@@ -80,7 +80,7 @@ export default function Home() {
                       width={400}
                       height={320}
                       className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                      style={{objectPosition: 'center 30%'}}
+                      style={{objectPosition: 'center 30%', transform: 'rotate(90deg)'}}
                     />
                   </div>
                 </div>
