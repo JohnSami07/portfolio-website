@@ -147,6 +147,140 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Experience Section */}
+        <section className="mb-16">
+          <div className="bg-gradient-to-br from-white/95 to-cyan-50/95 backdrop-blur-sm rounded-2xl shadow-2xl p-8 border border-white/20 hover:shadow-3xl transition-all duration-500">
+            <h2 className="text-4xl font-bold bg-gradient-to-r from-gray-900 to-cyan-600 bg-clip-text text-transparent mb-8 hover:scale-105 transition-transform duration-300 text-center">
+              Experience
+            </h2>
+            <div className="space-y-8">
+
+              {/* iCode Instructor */}
+              <div className="bg-gradient-to-br from-blue-50/80 to-indigo-100/80 backdrop-blur-sm rounded-2xl p-6 border border-blue-200/50 hover:shadow-xl transition-all duration-500 hover:-translate-y-1">
+                <div className="flex items-start justify-between mb-4">
+                  <div>
+                    <h3 className="text-2xl font-bold text-gray-900">iCode Instructor</h3>
+                    <p className="text-blue-600 font-medium text-lg">Nashville, TN</p>
+                    <p className="text-gray-600">Fall 2025</p>
+                  </div>
+                  <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center">
+                    <span className="text-white font-bold text-2xl">💻</span>
+                  </div>
+                </div>
+                <ul className="space-y-2 text-gray-700">
+                  <li className="flex items-start gap-3">
+                    <span className="text-blue-500 font-bold">•</span>
+                    <span>Teach beginner coding classes covering Python fundamentals, problem solving, and small projects</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-blue-500 font-bold">•</span>
+                    <span>Prepare lesson plans, in-class exercises, and short demos; support students during labs</span>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Belmont University Peer Tutor */}
+              <div className="bg-gradient-to-br from-purple-50/80 to-violet-100/80 backdrop-blur-sm rounded-2xl p-6 border border-purple-200/50 hover:shadow-xl transition-all duration-500 hover:-translate-y-1">
+                <div className="flex items-start justify-between mb-4">
+                  <div>
+                    <h3 className="text-2xl font-bold text-gray-900">Peer Tutor (Volunteer)</h3>
+                    <p className="text-purple-600 font-medium text-lg">Belmont University - Nashville, TN</p>
+                    <p className="text-gray-600">Current</p>
+                  </div>
+                  <div className="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center">
+                    <span className="text-white font-bold text-2xl">📚</span>
+                  </div>
+                </div>
+                <ul className="space-y-2 text-gray-700">
+                  <li className="flex items-start gap-3">
+                    <span className="text-purple-500 font-bold">•</span>
+                    <span>Support introductory CS course with labs, debugging help, and general assistance</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-purple-500 font-bold">•</span>
+                    <span>Host weekly club hours guiding students through assignments and study strategies</span>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Python Workshop Organizer */}
+              <div className="bg-gradient-to-br from-green-50/80 to-emerald-100/80 backdrop-blur-sm rounded-2xl p-6 border border-green-200/50 hover:shadow-xl transition-all duration-500 hover:-translate-y-1">
+                <div className="flex items-start justify-between mb-4">
+                  <div>
+                    <h3 className="text-2xl font-bold text-gray-900">Beginner Python Workshop - Organizer</h3>
+                    <p className="text-green-600 font-medium text-lg">Independent Project</p>
+                    <p className="text-gray-600">2025</p>
+                  </div>
+                  <div className="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center">
+                    <span className="text-white font-bold text-2xl">🐍</span>
+                  </div>
+                </div>
+                <ul className="space-y-2 text-gray-700">
+                  <li className="flex items-start gap-3">
+                    <span className="text-green-500 font-bold">•</span>
+                    <span>Designed and delivered a 60-minute intro workshop with slides and hands-on experiences</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-green-500 font-bold">•</span>
+                    <span>Shared materials on Github and collected feedback to improve future sessions</span>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Auto Resale */}
+              <div className="bg-gradient-to-br from-orange-50/80 to-amber-100/80 backdrop-blur-sm rounded-2xl p-6 border border-orange-200/50 hover:shadow-xl transition-all duration-500 hover:-translate-y-1">
+                <div className="flex items-start justify-between mb-4">
+                  <div>
+                    <h3 className="text-2xl font-bold text-gray-900">Auto Resale Analyst</h3>
+                    <p className="text-orange-600 font-medium text-lg">Nashville, TN</p>
+                    <p className="text-gray-600">Current</p>
+                  </div>
+                  <div className="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center">
+                    <span className="text-white font-bold text-2xl">🚗</span>
+                  </div>
+                </div>
+                <ul className="space-y-2 text-gray-700">
+                  <li className="flex items-start gap-3">
+                    <span className="text-orange-500 font-bold">•</span>
+                    <span>Build cost models (purchase, transport, parts, labor) to forecast profit margins</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-orange-500 font-bold">•</span>
+                    <span>Applied CS skills with structured datasets (CSV), Python for data cleaning/scoring, and repeatable checklists</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Languages Section */}
+        <section className="mb-16">
+          <div className="bg-gradient-to-br from-white/95 to-rose-50/95 backdrop-blur-sm rounded-2xl shadow-2xl p-8 border border-white/20 hover:shadow-3xl transition-all duration-500">
+            <h2 className="text-4xl font-bold bg-gradient-to-r from-gray-900 to-rose-600 bg-clip-text text-transparent mb-8 hover:scale-105 transition-transform duration-300 text-center">
+              Languages
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className="bg-gradient-to-br from-blue-50/80 to-indigo-100/80 backdrop-blur-sm rounded-2xl p-8 border border-blue-200/50 hover:shadow-xl transition-all duration-500 hover:-translate-y-2 text-center">
+                <div className="w-20 h-20 bg-blue-500 rounded-full mx-auto mb-4 flex items-center justify-center">
+                  <span className="text-white font-bold text-3xl">🇺🇸</span>
+                </div>
+                <h3 className="text-2xl font-bold text-blue-900 mb-2">English</h3>
+                <p className="text-blue-700 text-lg font-medium">Fluent</p>
+                <p className="text-blue-600 text-sm mt-2">Professional proficiency</p>
+              </div>
+              <div className="bg-gradient-to-br from-green-50/80 to-emerald-100/80 backdrop-blur-sm rounded-2xl p-8 border border-green-200/50 hover:shadow-xl transition-all duration-500 hover:-translate-y-2 text-center">
+                <div className="w-20 h-20 bg-green-500 rounded-full mx-auto mb-4 flex items-center justify-center">
+                  <span className="text-white font-bold text-3xl">🇪🇬</span>
+                </div>
+                <h3 className="text-2xl font-bold text-green-900 mb-2">Arabic</h3>
+                <p className="text-green-700 text-lg font-medium">Native</p>
+                <p className="text-green-600 text-sm mt-2">Mother tongue</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Skills Section */}
         <section className="mb-16">
           <div className="bg-gradient-to-br from-white/95 to-green-50/95 backdrop-blur-sm rounded-2xl shadow-2xl p-8 border border-white/20 hover:shadow-3xl transition-all duration-500">
