@@ -150,37 +150,77 @@ export default function Home() {
         {/* Skills Section */}
         <section className="mb-16">
           <div className="bg-gradient-to-br from-white/95 to-green-50/95 backdrop-blur-sm rounded-2xl shadow-2xl p-8 border border-white/20 hover:shadow-3xl transition-all duration-500">
-            <h2 className="text-3xl font-bold bg-gradient-to-r from-gray-900 to-green-600 bg-clip-text text-transparent mb-6 hover:scale-105 transition-transform duration-300">
+            <h2 className="text-4xl font-bold bg-gradient-to-r from-gray-900 to-green-600 bg-clip-text text-transparent mb-8 hover:scale-105 transition-transform duration-300 text-center">
               Technical Skills
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-6 text-center hover:shadow-xl transition-all duration-300 cursor-pointer transform hover:-translate-y-2">
-                <div className="w-16 h-16 bg-blue-100 rounded-full mx-auto mb-4 flex items-center justify-center">
-                  <span className="text-2xl font-bold text-blue-600">J</span>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+              {/* Programming & Development */}
+              <div className="bg-gradient-to-br from-blue-50/80 to-indigo-100/80 backdrop-blur-sm rounded-2xl p-6 border border-blue-200/50 hover:shadow-xl transition-all duration-500 hover:-translate-y-2">
+                <h3 className="text-xl font-bold text-blue-900 mb-4 flex items-center gap-3">
+                  <div className="w-10 h-10 bg-blue-500 rounded-lg flex items-center justify-center">
+                    <span className="text-white font-bold">&lt;/&gt;</span>
+                  </div>
+                  Programming & Development
+                </h3>
+                <div className="flex flex-wrap gap-2">
+                  {['Python', 'Java', 'HTML', 'CSS'].map((skill) => (
+                    <span key={skill} className="bg-blue-100 text-blue-800 px-3 py-2 rounded-full text-sm font-medium hover:bg-blue-200 transition-colors cursor-pointer">
+                      {skill}
+                    </span>
+                  ))}
                 </div>
-                <h3 className="font-bold text-blue-900 mb-2">Java</h3>
-                <p className="text-blue-700 text-sm">Object-oriented programming</p>
               </div>
-              <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-6 text-center hover:shadow-xl transition-all duration-300 cursor-pointer transform hover:-translate-y-2">
-                <div className="w-16 h-16 bg-green-100 rounded-full mx-auto mb-4 flex items-center justify-center">
-                  <span className="text-2xl font-bold text-green-600">C++</span>
+
+              {/* Tools & Technologies */}
+              <div className="bg-gradient-to-br from-purple-50/80 to-violet-100/80 backdrop-blur-sm rounded-2xl p-6 border border-purple-200/50 hover:shadow-xl transition-all duration-500 hover:-translate-y-2">
+                <h3 className="text-xl font-bold text-purple-900 mb-4 flex items-center gap-3">
+                  <div className="w-10 h-10 bg-purple-500 rounded-lg flex items-center justify-center">
+                    <span className="text-white font-bold">⚙️</span>
+                  </div>
+                  Tools & Technologies
+                </h3>
+                <div className="flex flex-wrap gap-2">
+                  {['VS Code', 'Google Cloud', 'API Integration', 'SQL Databases', 'Excel', 'Github'].map((skill) => (
+                    <span key={skill} className="bg-purple-100 text-purple-800 px-3 py-2 rounded-full text-sm font-medium hover:bg-purple-200 transition-colors cursor-pointer">
+                      {skill}
+                    </span>
+                  ))}
                 </div>
-                <h3 className="font-bold text-green-900 mb-2">C++</h3>
-                <p className="text-green-700 text-sm">Systems programming</p>
               </div>
-              <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl p-6 text-center hover:shadow-xl transition-all duration-300 cursor-pointer transform hover:-translate-y-2">
-                <div className="w-16 h-16 bg-purple-100 rounded-full mx-auto mb-4 flex items-center justify-center">
-                  <span className="text-2xl font-bold text-purple-600">SQL</span>
+
+              {/* Problem Solving & Analysis */}
+              <div className="bg-gradient-to-br from-green-50/80 to-emerald-100/80 backdrop-blur-sm rounded-2xl p-6 border border-green-200/50 hover:shadow-xl transition-all duration-500 hover:-translate-y-2">
+                <h3 className="text-xl font-bold text-green-900 mb-4 flex items-center gap-3">
+                  <div className="w-10 h-10 bg-green-500 rounded-lg flex items-center justify-center">
+                    <span className="text-white font-bold">🧠</span>
+                  </div>
+                  Problem Solving & Analysis
+                </h3>
+                <div className="flex flex-wrap gap-2">
+                  {['Algorithm Design', 'Debugging', 'Data Analysis'].map((skill) => (
+                    <span key={skill} className="bg-green-100 text-green-800 px-3 py-2 rounded-full text-sm font-medium hover:bg-green-200 transition-colors cursor-pointer">
+                      {skill}
+                    </span>
+                  ))}
                 </div>
-                <h3 className="font-bold text-purple-900 mb-2">SQL</h3>
-                <p className="text-purple-700 text-sm">Database management</p>
               </div>
-              <div className="bg-gradient-to-br from-orange-50 to-orange-100 rounded-xl p-6 text-center hover:shadow-xl transition-all duration-300 cursor-pointer transform hover:-translate-y-2">
-                <div className="w-16 h-16 bg-orange-100 rounded-full mx-auto mb-4 flex items-center justify-center">
-                  <span className="text-2xl font-bold text-orange-600">&lt;/&gt;</span>
+
+              {/* Communication & Leadership */}
+              <div className="bg-gradient-to-br from-orange-50/80 to-amber-100/80 backdrop-blur-sm rounded-2xl p-6 border border-orange-200/50 hover:shadow-xl transition-all duration-500 hover:-translate-y-2">
+                <h3 className="text-xl font-bold text-orange-900 mb-4 flex items-center gap-3">
+                  <div className="w-10 h-10 bg-orange-500 rounded-lg flex items-center justify-center">
+                    <span className="text-white font-bold">🎯</span>
+                  </div>
+                  Communication & Leadership
+                </h3>
+                <div className="flex flex-wrap gap-2">
+                  {['Public Speaking', 'Teaching', 'Cross Cultural Communication', 'Time Management', 'Collaboration'].map((skill) => (
+                    <span key={skill} className="bg-orange-100 text-orange-800 px-3 py-2 rounded-full text-sm font-medium hover:bg-orange-200 transition-colors cursor-pointer">
+                      {skill}
+                    </span>
+                  ))}
                 </div>
-                <h3 className="font-bold text-orange-900 mb-2">HTML</h3>
-                <p className="text-orange-700 text-sm">Web development</p>
               </div>
             </div>
           </div>
