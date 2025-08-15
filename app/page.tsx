@@ -130,16 +130,17 @@ export default function Home() {
               </div>
               <div className="bg-gradient-to-br from-purple-50 to-blue-50 rounded-xl p-6 flex items-center justify-center">
                 <div className="text-center">
-                  <div className="w-full h-48 bg-white rounded-lg mb-4 overflow-hidden shadow-lg">
+                  <div className="w-full h-60 bg-white rounded-lg mb-4 overflow-hidden shadow-xl border border-white/50">
                     <Image
-                      src="/images/image-full.jpg"
-                      alt="Belmont University Campus"
-                      width={400}
-                      height={192}
-                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                      src="https://cdn.builder.io/api/v1/image/assets%2F580e61cfa8e8413cb51188579f3e9f67%2F745a9daa78074c23a8fd8f9fcf032ba9?format=webp&width=800"
+                      alt="Belmont University Campus - Aerial View"
+                      width={800}
+                      height={240}
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                     />
                   </div>
-                  <p className="text-sm text-gray-600 font-medium">Belmont University</p>
+                  <p className="text-sm text-gray-600 font-medium">Belmont University Campus</p>
+                  <p className="text-xs text-gray-500 mt-1">Nashville, Tennessee</p>
                 </div>
               </div>
             </div>
