@@ -18,18 +18,14 @@ export function initializeAnimations() {
     existingFollower.remove();
   }
 
-  // Initialize all animations
+  // Initialize professional animations only
   initFadeInAnimations();
-  addAdvancedParticleSystem();
+  addSubtleParticleSystem();
   addTypingAnimation();
   addSkillProgressBars();
-  addEnhancedMouseFollower();
+  addSubtleHoverEffects();
   addTextRevealAnimation();
   addCounterAnimations();
-  addAdvancedHoverEffects();
-  addGlowingEffects();
-  addRippleEffects();
-  addFloatingIcons();
 }
 
 function initFadeInAnimations() {
@@ -49,21 +45,21 @@ function initFadeInAnimations() {
 
   setTimeout(() => {
     document.querySelectorAll('section, header').forEach(el => {
-      el.classList.add('opacity-0', 'translate-y-8');
+      el.classList.add('opacity-0', 'translate-y-4');
       observer.observe(el);
     });
   }, 100);
 
-  // Add CSS for fade in animation
+  // Add professional CSS animations
   const style = document.createElement('style');
   style.textContent = `
     .animate-fade-in {
-      animation: fadeInUp 0.8s ease forwards;
+      animation: fadeInUp 0.6s ease forwards;
     }
     @keyframes fadeInUp {
       from {
         opacity: 0;
-        transform: translateY(30px);
+        transform: translateY(20px);
       }
       to {
         opacity: 1;
@@ -74,7 +70,7 @@ function initFadeInAnimations() {
   document.head.appendChild(style);
 }
 
-function addAdvancedParticleSystem() {
+function addSubtleParticleSystem() {
   const canvas = document.createElement('canvas');
   canvas.id = 'particles-canvas';
   canvas.style.cssText = `
@@ -85,14 +81,13 @@ function addAdvancedParticleSystem() {
     height: 100%;
     pointer-events: none;
     z-index: 1;
-    opacity: 0.6;
+    opacity: 0.3;
   `;
 
   document.body.appendChild(canvas);
 
   const ctx = canvas.getContext('2d');
   let particles = [];
-  let connections = [];
 
   function resizeCanvas() {
     canvas.width = window.innerWidth;
@@ -102,29 +97,20 @@ function addAdvancedParticleSystem() {
   resizeCanvas();
   window.addEventListener('resize', resizeCanvas);
 
-  class AdvancedParticle {
+  class SubtleParticle {
     constructor() {
       this.x = Math.random() * canvas.width;
       this.y = Math.random() * canvas.height;
-      this.size = Math.random() * 3 + 1;
-      this.speedX = Math.random() * 2 - 1;
-      this.speedY = Math.random() * 2 - 1;
-      this.hue = Math.random() * 60 + 200;
-      this.brightness = Math.random() * 50 + 50;
-      this.alpha = Math.random() * 0.5 + 0.3;
-      this.pulse = Math.random() * 0.02 + 0.01;
-      this.pulseDirection = 1;
+      this.size = Math.random() * 1.5 + 0.5;
+      this.speedX = Math.random() * 0.5 - 0.25;
+      this.speedY = Math.random() * 0.5 - 0.25;
+      this.hue = Math.random() * 30 + 200; // Subtle blue range
+      this.alpha = Math.random() * 0.3 + 0.1;
     }
 
     update() {
       this.x += this.speedX;
       this.y += this.speedY;
-
-      // Pulsing effect
-      this.alpha += this.pulse * this.pulseDirection;
-      if (this.alpha >= 0.8 || this.alpha <= 0.3) {
-        this.pulseDirection *= -1;
-      }
 
       // Wrap around screen
       if (this.x > canvas.width) this.x = 0;
@@ -134,58 +120,19 @@ function addAdvancedParticleSystem() {
     }
 
     draw() {
-      // Glowing particle
       ctx.save();
-      ctx.globalCompositeOperation = 'lighter';
-      
-      // Outer glow
-      const gradient = ctx.createRadialGradient(this.x, this.y, 0, this.x, this.y, this.size * 3);
-      gradient.addColorStop(0, `hsla(${this.hue}, 70%, ${this.brightness}%, ${this.alpha})`);
-      gradient.addColorStop(1, `hsla(${this.hue}, 70%, ${this.brightness}%, 0)`);
-      
-      ctx.fillStyle = gradient;
-      ctx.beginPath();
-      ctx.arc(this.x, this.y, this.size * 3, 0, Math.PI * 2);
-      ctx.fill();
-
-      // Inner core
-      ctx.fillStyle = `hsla(${this.hue}, 80%, ${this.brightness + 20}%, ${this.alpha + 0.3})`;
+      ctx.globalAlpha = this.alpha;
+      ctx.fillStyle = `hsl(${this.hue}, 50%, 70%)`;
       ctx.beginPath();
       ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
       ctx.fill();
-      
       ctx.restore();
     }
   }
 
-  // Create particles
-  for (let i = 0; i < 40; i++) {
-    particles.push(new AdvancedParticle());
-  }
-
-  function drawConnections() {
-    ctx.save();
-    ctx.globalCompositeOperation = 'lighter';
-    
-    for (let i = 0; i < particles.length; i++) {
-      for (let j = i + 1; j < particles.length; j++) {
-        const dx = particles[i].x - particles[j].x;
-        const dy = particles[i].y - particles[j].y;
-        const distance = Math.sqrt(dx * dx + dy * dy);
-
-        if (distance < 150) {
-          const opacity = (150 - distance) / 150 * 0.3;
-          ctx.strokeStyle = `rgba(139, 92, 246, ${opacity})`;
-          ctx.lineWidth = 1;
-          ctx.beginPath();
-          ctx.moveTo(particles[i].x, particles[i].y);
-          ctx.lineTo(particles[j].x, particles[j].y);
-          ctx.stroke();
-        }
-      }
-    }
-    
-    ctx.restore();
+  // Create fewer, subtler particles
+  for (let i = 0; i < 15; i++) {
+    particles.push(new SubtleParticle());
   }
 
   function animate() {
@@ -196,183 +143,10 @@ function addAdvancedParticleSystem() {
       particle.draw();
     });
     
-    drawConnections();
     requestAnimationFrame(animate);
   }
 
   animate();
-}
-
-function addEnhancedMouseFollower() {
-  const follower = document.createElement('div');
-  follower.setAttribute('data-mouse-follower', 'true');
-  follower.style.cssText = `
-    position: fixed;
-    width: 40px;
-    height: 40px;
-    background: radial-gradient(circle, rgba(59,130,246,0.4), rgba(139,92,246,0.2), transparent);
-    border-radius: 50%;
-    pointer-events: none;
-    z-index: 9999;
-    transition: transform 0.15s ease, opacity 0.3s ease;
-    opacity: 0;
-    filter: blur(1px);
-    mix-blend-mode: screen;
-  `;
-
-  document.body.appendChild(follower);
-
-  let mouseX = 0, mouseY = 0;
-  let followerX = 0, followerY = 0;
-
-  document.addEventListener('mousemove', (e) => {
-    mouseX = e.clientX;
-    mouseY = e.clientY;
-    follower.style.opacity = '1';
-  });
-
-  document.addEventListener('mouseleave', () => {
-    follower.style.opacity = '0';
-  });
-
-  // Smooth following animation
-  function updateFollower() {
-    followerX += (mouseX - followerX) * 0.1;
-    followerY += (mouseY - followerY) * 0.1;
-    
-    follower.style.left = followerX - 20 + 'px';
-    follower.style.top = followerY - 20 + 'px';
-    
-    requestAnimationFrame(updateFollower);
-  }
-  updateFollower();
-
-  // Interactive hover effects
-  document.querySelectorAll('button, a, [class*="cursor-pointer"]').forEach(el => {
-    el.addEventListener('mouseenter', () => {
-      follower.style.transform = 'scale(1.5)';
-      follower.style.background = 'radial-gradient(circle, rgba(236,72,153,0.6), rgba(168,85,247,0.3), transparent)';
-    });
-    
-    el.addEventListener('mouseleave', () => {
-      follower.style.transform = 'scale(1)';
-      follower.style.background = 'radial-gradient(circle, rgba(59,130,246,0.4), rgba(139,92,246,0.2), transparent)';
-    });
-  });
-}
-
-function addGlowingEffects() {
-  const style = document.createElement('style');
-  style.textContent = `
-    @keyframes glow {
-      0%, 100% { box-shadow: 0 0 5px rgba(59,130,246,0.3), 0 0 10px rgba(139,92,246,0.2); }
-      50% { box-shadow: 0 0 20px rgba(59,130,246,0.6), 0 0 30px rgba(139,92,246,0.4); }
-    }
-    
-    .glow-on-hover:hover {
-      animation: glow 2s ease-in-out infinite;
-    }
-    
-    @keyframes float {
-      0%, 100% { transform: translateY(0px); }
-      50% { transform: translateY(-10px); }
-    }
-    
-    .floating {
-      animation: float 3s ease-in-out infinite;
-    }
-  `;
-  document.head.appendChild(style);
-
-  setTimeout(() => {
-    // Add glow effects to key elements
-    document.querySelectorAll('button').forEach(btn => {
-      btn.classList.add('glow-on-hover');
-    });
-
-    // Add floating animation to profile picture
-    const profilePic = document.querySelector('img[alt*="Profile Picture"]')?.parentElement;
-    if (profilePic) {
-      profilePic.classList.add('floating');
-    }
-  }, 1000);
-}
-
-function addRippleEffects() {
-  document.addEventListener('click', (e) => {
-    const ripple = document.createElement('div');
-    ripple.style.cssText = `
-      position: fixed;
-      width: 20px;
-      height: 20px;
-      background: radial-gradient(circle, rgba(59,130,246,0.6), transparent);
-      border-radius: 50%;
-      pointer-events: none;
-      z-index: 9999;
-      left: ${e.clientX - 10}px;
-      top: ${e.clientY - 10}px;
-      transform: scale(0);
-      animation: ripple 0.6s ease-out forwards;
-    `;
-
-    document.body.appendChild(ripple);
-
-    setTimeout(() => {
-      ripple.remove();
-    }, 600);
-  });
-
-  const style = document.createElement('style');
-  style.textContent = `
-    @keyframes ripple {
-      to {
-        transform: scale(4);
-        opacity: 0;
-      }
-    }
-  `;
-  document.head.appendChild(style);
-}
-
-function addFloatingIcons() {
-  const icons = ['💻', '🚀', '⚡', '🌟', '🎯', '🔥'];
-  
-  function createFloatingIcon() {
-    const icon = document.createElement('div');
-    const randomIcon = icons[Math.floor(Math.random() * icons.length)];
-    
-    icon.style.cssText = `
-      position: fixed;
-      font-size: 20px;
-      pointer-events: none;
-      z-index: 2;
-      left: ${Math.random() * window.innerWidth}px;
-      top: ${window.innerHeight + 20}px;
-      opacity: 0.7;
-      animation: floatUp 8s linear forwards;
-    `;
-    icon.textContent = randomIcon;
-
-    document.body.appendChild(icon);
-
-    setTimeout(() => {
-      icon.remove();
-    }, 8000);
-  }
-
-  const style = document.createElement('style');
-  style.textContent = `
-    @keyframes floatUp {
-      to {
-        transform: translateY(-${window.innerHeight + 100}px) rotate(360deg);
-        opacity: 0;
-      }
-    }
-  `;
-  document.head.appendChild(style);
-
-  // Create floating icons periodically
-  setInterval(createFloatingIcon, 3000);
 }
 
 function addTypingAnimation() {
@@ -391,7 +165,7 @@ function addTypingAnimation() {
       if (i < text.length) {
         subtitle.textContent += text.charAt(i);
         i++;
-        setTimeout(typeWriter, 100);
+        setTimeout(typeWriter, 80);
       } else {
         setTimeout(() => {
           subtitle.style.borderRight = 'none';
@@ -400,7 +174,7 @@ function addTypingAnimation() {
     }
 
     typeWriter();
-  }, 2000);
+  }, 1500);
 }
 
 function addSkillProgressBars() {
@@ -419,22 +193,21 @@ function addSkillProgressBars() {
               position: absolute;
               bottom: 0;
               left: 0;
-              height: 4px;
-              background: linear-gradient(90deg, #3B82F6, #8B5CF6, #EC4899);
+              height: 3px;
+              background: linear-gradient(90deg, #3B82F6, #6366F1);
               border-radius: 0 0 16px 16px;
               width: 0%;
-              transition: width 2s ease;
-              box-shadow: 0 0 10px rgba(59,130,246,0.5);
+              transition: width 1.5s ease;
             `;
 
             card.style.position = 'relative';
             card.appendChild(progressBar);
 
             setTimeout(() => {
-              const widths = [90, 85, 80, 88];
-              progressBar.style.width = `${widths[index] || 85}%`;
+              const widths = [85, 80, 75, 82];
+              progressBar.style.width = `${widths[index] || 80}%`;
             }, 100);
-          }, index * 300);
+          }, index * 200);
         });
 
         observer.unobserve(entry.target);
@@ -460,15 +233,15 @@ function addTextRevealAnimation() {
         const words = text.split(' ');
 
         entry.target.innerHTML = words.map((word, index) =>
-          `<span style="opacity: 0; display: inline-block; transform: translateY(20px) rotate(5deg); transition: all 0.6s ease ${index * 0.1}s;">${word}</span>`
+          `<span style="opacity: 0; display: inline-block; transform: translateY(10px); transition: all 0.4s ease ${index * 0.1}s;">${word}</span>`
         ).join(' ');
 
         const spans = entry.target.querySelectorAll('span');
         spans.forEach((span, index) => {
           setTimeout(() => {
             span.style.opacity = '1';
-            span.style.transform = 'translateY(0) rotate(0deg)';
-          }, index * 150);
+            span.style.transform = 'translateY(0)';
+          }, index * 100);
         });
 
         observer.unobserve(entry.target);
@@ -492,7 +265,7 @@ function addCounterAnimations() {
       if (entry.isIntersecting) {
         const gpaElement = entry.target.querySelector('span[class*="bg-green-100"]');
         if (gpaElement && gpaElement.textContent.includes('4.0')) {
-          animateCounter(gpaElement, 0, 4.0, 2000, 1);
+          animateCounter(gpaElement, 0, 4.0, 1500, 1);
         }
         observer.unobserve(entry.target);
       }
@@ -532,23 +305,37 @@ function easeOutCubic(t) {
   return 1 - Math.pow(1 - t, 3);
 }
 
-function addAdvancedHoverEffects() {
+function addSubtleHoverEffects() {
   setTimeout(() => {
     const cards = document.querySelectorAll('[class*="hover:shadow-xl"], [class*="hover:shadow-2xl"]');
 
     cards.forEach(card => {
-      card.style.transition = 'all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275)';
+      card.style.transition = 'all 0.3s ease';
 
       card.addEventListener('mouseenter', () => {
-        card.style.transform = 'translateY(-8px) scale(1.02) rotateX(5deg)';
-        card.style.boxShadow = '0 25px 50px rgba(0,0,0,0.2), 0 0 30px rgba(59,130,246,0.3)';
-        card.style.filter = 'brightness(1.05)';
+        card.style.transform = 'translateY(-4px)';
+        card.style.boxShadow = '0 10px 25px rgba(0,0,0,0.1)';
       });
 
       card.addEventListener('mouseleave', () => {
-        card.style.transform = 'translateY(0) scale(1) rotateX(0deg)';
+        card.style.transform = 'translateY(0)';
         card.style.boxShadow = '';
-        card.style.filter = 'brightness(1)';
+      });
+    });
+
+    // Professional button hover effects
+    const buttons = document.querySelectorAll('button');
+    buttons.forEach(btn => {
+      btn.style.transition = 'all 0.2s ease';
+      
+      btn.addEventListener('mouseenter', () => {
+        btn.style.transform = 'translateY(-1px)';
+        btn.style.boxShadow = '0 4px 12px rgba(0,0,0,0.15)';
+      });
+
+      btn.addEventListener('mouseleave', () => {
+        btn.style.transform = 'translateY(0)';
+        btn.style.boxShadow = '';
       });
     });
   }, 500);
