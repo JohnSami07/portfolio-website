@@ -15,12 +15,11 @@ export default function Home() {
         <header className="text-center mb-16 bg-gradient-to-br from-white/95 to-blue-50/95 backdrop-blur-sm rounded-2xl shadow-2xl p-12 border border-white/20 relative z-10 hover:shadow-3xl transition-all duration-500">
           <div className="w-40 h-40 rounded-full mx-auto mb-6 overflow-hidden ring-4 ring-blue-400/50 shadow-2xl hover:ring-purple-400/50 transition-all duration-300 hover:scale-110">
             <Image
-              src="/images/IMG_3180.jpeg"
+              src="https://cdn.builder.io/api/v1/image/assets%2F580e61cfa8e8413cb51188579f3e9f67%2F1b4dc65ce9db43f09a02b97099a39866?format=webp&width=800"
               alt="John Sami - Profile Picture"
               width={160}
               height={160}
               className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
-              style={{ transform: 'rotate(90deg)' }}
               priority
             />
           </div>
