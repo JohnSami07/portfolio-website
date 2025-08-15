@@ -75,12 +75,12 @@ export default function Home() {
                 <div className="text-center">
                   <div className="w-full h-80 bg-white rounded-lg overflow-hidden shadow-lg">
                     <Image
-                      src="/images/IMG_7029.jpeg"
-                      alt="John Sami - About me photo"
+                      src="https://cdn.builder.io/api/v1/image/assets%2F580e61cfa8e8413cb51188579f3e9f67%2F981be29b3d3147608fd8c3d163ec6ad9?format=webp&width=800"
+                      alt="John Sami with family - First-generation college student"
                       width={400}
                       height={320}
                       className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                      style={{objectPosition: 'center 70%'}}
+                      style={{objectPosition: 'center 30%'}}
                     />
                   </div>
                 </div>
