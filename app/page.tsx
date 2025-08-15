@@ -38,13 +38,13 @@ export default function Home() {
               </a>
             </div>
             <div className="flex items-center gap-3">
-              <div className="w-12 h-12 rounded-full overflow-hidden">
+              <div className="w-16 h-16 rounded-full overflow-hidden shadow-xl border-2 border-white/50 hover:scale-110 transition-all duration-300">
                 <Image
-                  src="/images/image.jpeg"
-                  alt="Nashville, TN"
-                  width={48}
-                  height={48}
-                  className="w-full h-full object-cover"
+                  src="https://cdn.builder.io/api/v1/image/assets%2F580e61cfa8e8413cb51188579f3e9f67%2Fe74ca9ee73e346999ae9aeed447c111e?format=webp&width=800"
+                  alt="Nashville, TN Skyline"
+                  width={64}
+                  height={64}
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                 />
               </div>
               <span>Nashville, TN</span>
