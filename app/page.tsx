@@ -58,14 +58,14 @@ export default function Home() {
         </header>
 
         {/* About Section */}
-        <section className="mb-16">
-          <div className="bg-gradient-to-br from-white/95 to-gray-50/95 backdrop-blur-sm rounded-2xl shadow-2xl p-8 border border-white/20 hover:shadow-3xl transition-all duration-500">
-            <h2 className="text-3xl font-bold bg-gradient-to-r from-gray-900 to-blue-600 bg-clip-text text-transparent mb-6 hover:scale-105 transition-transform duration-300">
+        <section className="mb-8 sm:mb-16">
+          <div className="bg-gradient-to-br from-white/95 to-gray-50/95 backdrop-blur-sm rounded-2xl shadow-2xl p-6 sm:p-8 border border-white/20 hover:shadow-3xl transition-all duration-500">
+            <h2 className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-gray-900 to-blue-600 bg-clip-text text-transparent mb-6 hover:scale-105 transition-transform duration-300">
               About Me
             </h2>
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8">
               <div className="lg:col-span-2">
-                <p className="text-xl text-gray-700 leading-relaxed">
+                <p className="text-lg sm:text-xl text-gray-700 leading-relaxed">
                   First-generation Egyptian college student pursuing a Bachelor of Science in Computer Science at Belmont University.
                   Passionate about software development, problem-solving, and creating innovative solutions. Currently maintaining a
                   perfect 4.0 GPA while participating in the Honors Program.
