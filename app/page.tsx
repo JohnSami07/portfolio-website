@@ -254,33 +254,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Languages Section */}
-        <section className="mb-16">
-          <div className="bg-gradient-to-br from-white/95 to-rose-50/95 backdrop-blur-sm rounded-2xl shadow-2xl p-8 border border-white/20 hover:shadow-3xl transition-all duration-500">
-            <h2 className="text-4xl font-bold bg-gradient-to-r from-gray-900 to-rose-600 bg-clip-text text-transparent mb-8 hover:scale-105 transition-transform duration-300 text-center">
-              Languages
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="bg-gradient-to-br from-blue-50/80 to-indigo-100/80 backdrop-blur-sm rounded-2xl p-8 border border-blue-200/50 hover:shadow-xl transition-all duration-500 hover:-translate-y-2 text-center">
-                <div className="w-20 h-20 bg-blue-500 rounded-full mx-auto mb-4 flex items-center justify-center">
-                  <span className="text-white font-bold text-3xl">🇺🇸</span>
-                </div>
-                <h3 className="text-2xl font-bold text-blue-900 mb-2">English</h3>
-                <p className="text-blue-700 text-lg font-medium">Fluent</p>
-                <p className="text-blue-600 text-sm mt-2">Professional proficiency</p>
-              </div>
-              <div className="bg-gradient-to-br from-green-50/80 to-emerald-100/80 backdrop-blur-sm rounded-2xl p-8 border border-green-200/50 hover:shadow-xl transition-all duration-500 hover:-translate-y-2 text-center">
-                <div className="w-20 h-20 bg-green-500 rounded-full mx-auto mb-4 flex items-center justify-center">
-                  <span className="text-white font-bold text-3xl">🇪🇬</span>
-                </div>
-                <h3 className="text-2xl font-bold text-green-900 mb-2">Arabic</h3>
-                <p className="text-green-700 text-lg font-medium">Native</p>
-                <p className="text-green-600 text-sm mt-2">Mother tongue</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
         {/* Skills Section */}
         <section className="mb-16">
           <div className="bg-gradient-to-br from-white/95 to-green-50/95 backdrop-blur-sm rounded-2xl shadow-2xl p-8 border border-white/20 hover:shadow-3xl transition-all duration-500">
