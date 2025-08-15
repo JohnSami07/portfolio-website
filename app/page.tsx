@@ -71,15 +71,15 @@ export default function Home() {
                   perfect 4.0 GPA while participating in the Honors Program.
                 </p>
               </div>
-              <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-xl p-6 flex items-center justify-center">
+              <div className="bg-gradient-to-br from-blue-50/80 to-purple-50/80 backdrop-blur-sm rounded-2xl p-8 flex items-center justify-center border border-white/30">
                 <div className="text-center">
-                  <div className="w-full h-80 bg-white rounded-lg overflow-hidden shadow-lg">
+                  <div className="w-full h-80 bg-gradient-to-br from-white to-gray-50 rounded-2xl overflow-hidden shadow-2xl ring-1 ring-white/50 hover:ring-2 hover:ring-purple-300/50 transition-all duration-500">
                     <Image
                       src="https://cdn.builder.io/api/v1/image/assets%2F580e61cfa8e8413cb51188579f3e9f67%2F981be29b3d3147608fd8c3d163ec6ad9?format=webp&width=800"
                       alt="John Sami with family - First-generation college student"
                       width={400}
                       height={320}
-                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                       style={{objectPosition: 'center 30%', transform: 'rotate(90deg)'}}
                     />
                   </div>
@@ -108,7 +108,7 @@ export default function Home() {
                     <span className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">
                       Honors Program
                     </span>
-                    <span className="bg-orange-100 text-orange-800 px-4 py-2 rounded-full text-lg font-bold" style={{fontFamily: 'Georgia, serif'}}>
+                    <span className="bg-orange-100 text-orange-800 px-6 py-3 rounded-full text-xl font-bold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105" style={{fontFamily: 'Georgia, serif'}}>
                       First-generation College Student
                     </span>
                   </div>
