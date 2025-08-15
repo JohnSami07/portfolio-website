@@ -363,95 +363,95 @@ export default function Home() {
         {/* Projects Section */}
         <section className="mb-16">
           <div className="bg-gradient-to-br from-white/95 to-indigo-50/95 backdrop-blur-sm rounded-2xl shadow-2xl p-8 border border-white/20 hover:shadow-3xl transition-all duration-500">
-            <h2 className="text-3xl font-bold bg-gradient-to-r from-gray-900 to-indigo-600 bg-clip-text text-transparent mb-6 hover:scale-105 transition-transform duration-300">
+            <h2 className="text-4xl font-bold bg-gradient-to-r from-gray-900 to-indigo-600 bg-clip-text text-transparent mb-8 hover:scale-105 transition-transform duration-300 text-center">
               Featured Projects
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="bg-gradient-to-br from-blue-50 to-indigo-100 rounded-xl p-6 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 hover:scale-105 cursor-pointer border border-blue-200/50">
-                <div className="flex items-center justify-between mb-4">
-                  <h3 className="text-xl font-bold text-gray-900">Personal Budget Tracker</h3>
-                  <div className="w-12 h-12 bg-gray-200 rounded-lg flex items-center justify-center text-gray-500 text-xs">
-                    IMG
-                  </div>
-                </div>
-                <p className="text-gray-700 mb-4">
-                  A comprehensive budgeting application built with React and Firebase. Features expense tracking,
-                  budget goals, and financial insights with interactive charts.
-                </p>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  <span className="bg-blue-200 text-blue-800 px-2 py-1 rounded text-xs">React</span>
-                  <span className="bg-blue-200 text-blue-800 px-2 py-1 rounded text-xs">Firebase</span>
-                  <span className="bg-blue-200 text-blue-800 px-2 py-1 rounded text-xs">Chart.js</span>
-                </div>
-                <div className="flex gap-3">
-                  <button className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-4 py-2 rounded-lg hover:from-blue-700 hover:to-blue-800 transition-all duration-300 text-sm shadow-lg hover:shadow-xl">
-                    View Demo
-                  </button>
-                  <button className="border border-blue-600 text-blue-600 px-4 py-2 rounded-lg hover:bg-blue-50 transition-all duration-300 text-sm">
-                    View Code
-                  </button>
-                </div>
-              </div>
+            <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
 
-              <div className="bg-gradient-to-br from-green-50 to-emerald-100 rounded-xl p-6 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 hover:scale-105 cursor-pointer border border-green-200/50">
-                <div className="flex items-center justify-between mb-4">
-                  <h3 className="text-xl font-bold text-gray-900">Study Planner App</h3>
-                  <div className="w-12 h-12 bg-gray-200 rounded-lg flex items-center justify-center text-gray-500 text-xs">
-                    IMG
-                  </div>
-                </div>
-                <p className="text-gray-700 mb-4">
-                  A productivity app for students to manage assignments, track study sessions, and set academic goals.
-                  Includes calendar integration and progress tracking.
-                </p>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  <span className="bg-green-200 text-green-800 px-2 py-1 rounded text-xs">Python</span>
-                  <span className="bg-green-200 text-green-800 px-2 py-1 rounded text-xs">Flask</span>
-                  <span className="bg-green-200 text-green-800 px-2 py-1 rounded text-xs">SQLite</span>
-                </div>
-                <div className="flex gap-3">
-                  <button className="bg-gradient-to-r from-green-600 to-green-700 text-white px-4 py-2 rounded-lg hover:from-green-700 hover:to-green-800 transition-all duration-300 text-sm shadow-lg hover:shadow-xl">
-                    View Demo
-                  </button>
-                  <button className="border border-green-600 text-green-600 px-4 py-2 rounded-lg hover:bg-green-50 transition-all duration-300 text-sm">
-                    View Code
-                  </button>
-                </div>
-              </div>
-
-              <div className="bg-gradient-to-br from-purple-50 to-violet-100 rounded-xl p-6 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 hover:scale-105 cursor-pointer border border-purple-200/50">
+              {/* Portfolio Website */}
+              <div className="bg-gradient-to-br from-purple-50/80 to-violet-100/80 backdrop-blur-sm rounded-2xl p-6 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 hover:scale-105 cursor-pointer border border-purple-200/50">
                 <div className="flex items-center justify-between mb-4">
                   <h3 className="text-xl font-bold text-gray-900">Portfolio Website</h3>
-                  <div className="w-12 h-12 bg-gray-200 rounded-lg flex items-center justify-center text-gray-500 text-xs">
-                    IMG
+                  <div className="w-12 h-12 bg-purple-500 rounded-lg flex items-center justify-center">
+                    <span className="text-white font-bold">🌐</span>
                   </div>
                 </div>
                 <p className="text-gray-700 mb-4">
-                  This responsive portfolio website built with Next.js and Tailwind CSS. Features modern design,
-                  smooth animations, and optimized performance.
+                  Responsive personal website deployed with Github Pages. Features modern design,
+                  smooth animations, and optimized performance with quick load times.
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
-                  <span className="bg-purple-200 text-purple-800 px-2 py-1 rounded text-xs">Next.js</span>
-                  <span className="bg-purple-200 text-purple-800 px-2 py-1 rounded text-xs">Tailwind CSS</span>
-                  <span className="bg-purple-200 text-purple-800 px-2 py-1 rounded text-xs">TypeScript</span>
+                  <span className="bg-purple-200 text-purple-800 px-3 py-1 rounded-full text-xs font-medium">Next.js</span>
+                  <span className="bg-purple-200 text-purple-800 px-3 py-1 rounded-full text-xs font-medium">Tailwind CSS</span>
+                  <span className="bg-purple-200 text-purple-800 px-3 py-1 rounded-full text-xs font-medium">TypeScript</span>
+                  <span className="bg-purple-200 text-purple-800 px-3 py-1 rounded-full text-xs font-medium">Git</span>
                 </div>
                 <div className="flex gap-3">
-                  <button className="bg-gradient-to-r from-purple-600 to-purple-700 text-white px-4 py-2 rounded-lg hover:from-purple-700 hover:to-purple-800 transition-all duration-300 text-sm shadow-lg hover:shadow-xl">
-                    View Live
+                  <button className="bg-gradient-to-r from-purple-600 to-purple-700 text-white px-4 py-2 rounded-lg hover:from-purple-700 hover:to-purple-800 transition-all duration-300 text-sm shadow-lg hover:shadow-xl font-medium">
+                    Live Site
                   </button>
-                  <button className="border border-purple-600 text-purple-600 px-4 py-2 rounded-lg hover:bg-purple-50 transition-all duration-300 text-sm">
-                    View Code
+                  <button className="border border-purple-600 text-purple-600 px-4 py-2 rounded-lg hover:bg-purple-50 transition-all duration-300 text-sm font-medium">
+                    Github
                   </button>
                 </div>
               </div>
 
-              <div className="bg-gradient-to-br from-slate-50 to-gray-100 rounded-xl p-6 border-2 border-dashed border-gray-300">
-                <div className="text-center text-gray-500 py-8">
-                  <div className="w-16 h-16 bg-gray-200 rounded-lg mx-auto mb-4 flex items-center justify-center">
-                    <span className="text-2xl">+</span>
+              {/* Crypto Watch CLI */}
+              <div className="bg-gradient-to-br from-blue-50/80 to-indigo-100/80 backdrop-blur-sm rounded-2xl p-6 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 hover:scale-105 cursor-pointer border border-blue-200/50">
+                <div className="flex items-center justify-between mb-4">
+                  <h3 className="text-xl font-bold text-gray-900">Crypto Watch CLI</h3>
+                  <div className="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center">
+                    <span className="text-white font-bold">₿</span>
                   </div>
-                  <h3 className="text-xl font-medium text-gray-600 mb-2">Additional Project</h3>
-                  <p className="text-gray-500">Space reserved for future projects</p>
+                </div>
+                <p className="text-gray-700 mb-4">
+                  Command line application that pulls live cryptocurrency prices via CoinGecko API.
+                  Supports multiple symbols and currencies with interactive watch mode.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <span className="bg-blue-200 text-blue-800 px-3 py-1 rounded-full text-xs font-medium">Python</span>
+                  <span className="bg-blue-200 text-blue-800 px-3 py-1 rounded-full text-xs font-medium">API Integration</span>
+                  <span className="bg-blue-200 text-blue-800 px-3 py-1 rounded-full text-xs font-medium">CLI</span>
+                  <span className="bg-blue-200 text-blue-800 px-3 py-1 rounded-full text-xs font-medium">Error Handling</span>
+                </div>
+                <div className="flex gap-3">
+                  <button className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-4 py-2 rounded-lg hover:from-blue-700 hover:to-blue-800 transition-all duration-300 text-sm shadow-lg hover:shadow-xl font-medium">
+                    Demo
+                  </button>
+                  <button className="border border-blue-600 text-blue-600 px-4 py-2 rounded-lg hover:bg-blue-50 transition-all duration-300 text-sm font-medium">
+                    Github
+                  </button>
+                </div>
+              </div>
+
+              {/* Carflip Hub */}
+              <div className="bg-gradient-to-br from-green-50/80 to-emerald-100/80 backdrop-blur-sm rounded-2xl p-6 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 hover:scale-105 cursor-pointer border border-green-200/50">
+                <div className="flex items-center justify-between mb-4">
+                  <h3 className="text-xl font-bold text-gray-900">Carflip Hub</h3>
+                  <div className="w-12 h-12 bg-green-500 rounded-lg flex items-center justify-center">
+                    <span className="text-white font-bold">🚗</span>
+                  </div>
+                </div>
+                <div className="mb-2">
+                  <span className="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-xs font-bold">IN PROGRESS</span>
+                </div>
+                <p className="text-gray-700 mb-4">
+                  Web application that processes auction CSVs (Copart/IAAI), cleans data, and ranks listings by ROI score.
+                  Features filters, VIN decode integration, and repair cost estimation.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <span className="bg-green-200 text-green-800 px-3 py-1 rounded-full text-xs font-medium">Python</span>
+                  <span className="bg-green-200 text-green-800 px-3 py-1 rounded-full text-xs font-medium">Streamlit</span>
+                  <span className="bg-green-200 text-green-800 px-3 py-1 rounded-full text-xs font-medium">FastAPI</span>
+                  <span className="bg-green-200 text-green-800 px-3 py-1 rounded-full text-xs font-medium">Data Analysis</span>
+                </div>
+                <div className="flex gap-3">
+                  <button className="bg-gradient-to-r from-green-600 to-green-700 text-white px-4 py-2 rounded-lg hover:from-green-700 hover:to-green-800 transition-all duration-300 text-sm shadow-lg hover:shadow-xl font-medium">
+                    Preview
+                  </button>
+                  <button className="border border-green-600 text-green-600 px-4 py-2 rounded-lg hover:bg-green-50 transition-all duration-300 text-sm font-medium">
+                    Github
+                  </button>
                 </div>
               </div>
             </div>
